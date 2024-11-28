@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+
+}
+
+:root{
+    --bg-color: #abd2de;
+    --second-bg-color: #323946;
+    --main-color: #35C7E3;
+    --white-color: midnightblue;
+    --disabled-color: #fff3;
+    --logo-color: #1f242d;
+}
+
+html{
+    font-size: 62.5%;
+    /* overflow-x: hidden; */
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--white-color);
+    height: 600px;
+    width: 100vw;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    height: 10rem;
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--logo-color);
+    /* width: 130px;
+    height: 130px; */
+    /* border-radius: 50%; */
+    /* overflow: hidden; */
+
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav a{
+    font-size: 2rem;
+    color: var(--white-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .5s;
+    display: none;
+}
+
+nav a:hover,
+nav a.active{
+    color: var(--main-color);
+}
+
+/* ------ burger menu----> */
+
+#menu_icon{
+    font-size: 4rem;
+    /* color: var(--white-color); */
+    cursor: pointer;
+    display: none;
+}
+
+.maps-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 20px; */
+    margin-top: 50px;
+    width: 100vw;
+    /* object-fit: cover; */
+    position: relative;
+    overflow: hidden;
+}
+#map-cameroun, #map-france {
+    height: 550px;
+    width: 600px;
+    position: sticky;
+    column-gap: 20px;
+    
+
+}
+h2 {
+    text-align: center;
+}
+.maps-container-footer {
+    /* position: fixed; */
+    /* top: 100px; */
+    /* right: 20px; */
+    z-index: -100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px; */
+    ;
+}
+
+#map-cameroun-footer {
+    height: 200px;
+    width: 200px;
+    border: 2px 2px 2px solid #11b0d3;
+    /* border-radius: 100px; */
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+}
+#map-france-footer {
+    height: 200px;
+    width: 200px;
+    border: 2px 2px 2px solid #11b0d3;
+    /* border-radius: 100px; */
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+footer {
+    /* position: fixed; */
+    /* bottom: 0; */
+    /* left: 0; */
+    width: 100%;
+    /* background-color: #f5f5f5; */
+    /* padding: 10px; */
+    text-align: center;
+    height: 150px;
+    margin-top: -150px;
+}
+footer p {
+    margin: 0;
+}
+
+
+.marker-label {
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+    transform: translate(15px, -15px);
+}
+
+.tooltip-text {
+    font-size: 2rem;
+} 
+
+@media screen {
+    
+}

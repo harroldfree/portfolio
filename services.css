@@ -1,0 +1,4 @@
+header nav a:not(2) {
+    display: none;
+    /* color: var(--bg-color); */
+}
