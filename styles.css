@@ -68,6 +68,10 @@ nav a.active{
     color: var(--main-color);
 }
 
+/* nav a:not(.active){
+    visibility: hidden;
+} */
+
 /* ------ burger menu----> */
 
 #menu_icon{
@@ -326,6 +330,10 @@ section.active{
     transform: rotate(180deg);
 }
 
+.services_box p {
+    font-size: 4rem;
+}
+
 .services_box h3{
     font-size: 3rem;
     margin: 1rem 0 2rem;
@@ -458,6 +466,67 @@ section.active{
     overflow: visible;
 
 }
+.bxl-html5{
+    color: var(--main-color);
+}
+.bxl-html5:hover{
+    color: #e34c26;
+}
+.bxl-css3{
+    color: var(--main-color);
+}
+.bxl-css3:hover{
+    color: #264de4;
+}
+.bxl-javascript{
+    color: var(--main-color);
+}
+.bxl-javascript:hover{
+    color: #f0db4f;
+}
+.bxl-react{
+    color: var(--main-color);
+}
+.bxl-react:hover{
+    color: #61dafb;
+}
+.bxl-nodejs{
+    color: var(--main-color);
+}
+.bxl-nodejs:hover{
+    color: #446B47;
+}
+.bxl-tailwind-css{
+    color: var(--main-color);
+}
+.bxl-tailwind-css:hover{
+    color: #06b6d4;
+}
+.bxl-mongodb{
+    color: var(--main-color);
+}
+.bxl-mongodb:hover{
+    color: #68a063;
+}
+.bxl-figma{
+    color: var(--main-color);
+}
+.bxl-figma:hover{
+    color: #f24e1e;
+}
+
+
+/* .resume_item img{
+    color: var(--main-color);
+    font-size: 3.5rem;
+} */
+
+.qgis{
+    fill: var(--main-color);
+}
+.qgis:hover{
+    fill: #33a02c;
+}
 
 .resume_detail.skills .resume_item{
     /* position: relative; */
@@ -473,7 +542,7 @@ section.active{
 }
 
 .resume_detail.skills .resume_item:hover i{
-    color: var(--main-color);
+    /* color: var(--main-color); */
 }
 
 .resume_detail.skills .resume_item span{
@@ -629,7 +698,7 @@ section.active{
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
     border-radius: 1rem;
 }
 
