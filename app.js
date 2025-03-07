@@ -9,20 +9,7 @@ menuIcon.addEventListener('click', () => {
     navBar.classList.toggle('active');
 })
 
-// const activePage = () => {
-//     navLinks.forEach(link => {
-//         link.classList.remove('active');
-//     });
-// }
 
-// navLinks.forEach((link, idx) =>{
-//     link.addEventListener('click', () => {
-//        if(!link.classList.contains('active')){
-//         activePage();
-//         link.classList.add('active');
-//        }
-//     });
-// })
 
 const resumeBts = document.querySelectorAll('.resume_btn');
 
@@ -127,9 +114,9 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors'
 }).addTo(mapCameroun);
 // addMarkerWithLink(mapCameroun,  3.8667, 11.5167,);
-addMarkerWithLink(mapCameroun,  3.8575, 11.5017, "/services.html","Services");
-addMarkerWithLink(mapCameroun, 10.1111, 14.3333, "/home.html","Accueil");
-addMarkerWithLink(mapCameroun, 5.9631, 10.1591, "/resume.html","Resumé");  
+addMarkerWithLink(mapCameroun,  3.8575, 11.5017, "services.html","Services");
+addMarkerWithLink(mapCameroun, 10.1111, 14.3333, "index.html","Accueil");
+addMarkerWithLink(mapCameroun, 5.9631, 10.1591, "resume.html","Resumé");  
 
 
 
@@ -142,8 +129,8 @@ const mapFrance = L.map('map-france', {zoomControl: false, minZoom: 6, maxZoom: 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors'
 }).addTo(mapFrance);
-addMarkerWithLink(mapFrance,  48.8566, 2.3522, '/projets.html', 'Projets');
-addMarkerWithLink(mapFrance, 47.2184, -1.5536, '/contact.html', 'Contact');
+addMarkerWithLink(mapFrance,  48.8566, 2.3522, 'projets.html', 'Projets');
+addMarkerWithLink(mapFrance, 47.2184, -1.5536, 'contact.html', 'Contact');
 
 
 
@@ -155,21 +142,6 @@ L.tileLayer.wms('https://wxs.ign.fr/hydro/geoportail/r/wms', {
 }).addTo(mapFrance);
 
 
-// // Mini map Cameroun
-// const mapCamerounFooter = L.map('map-cameroun-footer', {zoomControl: false,  minZoom: 4, maxZoom: 4}).setView([7.3697, 12.3547], 4);
-// L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mapCamerounFooter);
-// addSimpleMarker(mapCamerounFooter, 3.8667, 11.5167, "/index.html");
-// addSimpleMarker(mapCamerounFooter, 3.8575, 11.5017, "https://www.uy1.uninet.cm");
-// addSimpleMarker(mapCamerounFooter, 10.1111, 14.3333, "https://www.univ-yaounde2.cm");
-// addSimpleMarker(mapCamerounFooter, 4.0511, 9.7679, "https://www.univ-douala.cm");
 
-
-
-
-
-// // Mini map France
-// const mapFranceFooter = L.map('map-france-footer', {zoomControl: false, minZoom: 4, maxZoom: 4}).setView([46.603354, 1.888334], 4);
-// L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mapFranceFooter);
-// addSimpleMarker(mapFranceFooter, 48.8566, 2.3522, "https://www.paris.fr");
 
 
